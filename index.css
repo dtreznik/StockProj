@@ -1,0 +1,103 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+.main-wrapper{
+    display: flex;
+    grid-template-columns: auto, auto;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.side-bar{
+    height: 100%;
+    width: 200px;
+    background-color: rgb(3, 0, 12);  
+}
+.side-bar a{
+    display: block;
+    width: 100%;
+    height: 5%;   
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    
+    
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    background-color: rgb(2, 0, 7);  
+}
+
+.data-wrapper{
+    background-color: rgb(2, 0, 7);
+    height: 30%;
+    width: 100%;
+    border-bottom: 2px solid rgb(56, 56, 56);
+    
+}
+.graph-wrapper{
+    height: 70%;
+    width: 100%;
+    background-color: rgb(2, 0, 7);
+}
+
+.data-wrapper-head{
+    position: static;
+    width: 100%;
+    height: 20%;
+    
+}
+
+.data-wrapper-head-update{
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding-left: 5%;
+}
+
+.data-wrapper-body{
+    width: 100%;
+    height: 80%;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.data-wrapper-body-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.data-wrapper-body-grid-item{
+    
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+.data-wrapper-body-grid-item-label{
+    flex: 1;
+    padding-left: 5%;
+    color: white;
+    
+}
+.data-wrapper-body-grid-item-value{
+    flex: 1;
+    color: white;
+    min-height: 50px; 
+} 
